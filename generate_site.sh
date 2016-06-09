@@ -42,7 +42,7 @@ EOF
 for post_number in `seq 1 $POST_COUNT`
 do
     export POST_NUMBER=$post_number
-    post_date=`date -v -${post_number}d +%Y-%m-%d`
+    post_date=`date +%Y-%m-%d`
     post_file="$post_date-test_post_$post_number"
     cat >$POST_DIR/$post_file.md << EOF
 ---
