@@ -33,4 +33,4 @@ build, you'll need to do the following:
 
 ## License
 
-MIT. See the LICENSE file for more details
+MIT. See the [LICENSE](LICENSE) file for more details
