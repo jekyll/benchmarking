@@ -126,7 +126,7 @@ title: Jekyll Test Site
 
 EOF
 
-for (( post_number = 1; post_number <= POST_COUNT; ++post_number )); do
+for (( post_number = 1; post_number <= POST_COUNT; ++post_number ))
 do
     export POST_NUMBER=$post_number
     post_date=`date +%Y-%m-%d`
