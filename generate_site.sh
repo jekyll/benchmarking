@@ -5,7 +5,12 @@ function die()
     exit 1
 }
 
-[[ $# -ne 2 ]] && die "Not enough arguments"
+if (( $# != 2 ))
+then
+  echo "Usage: $0 [Number of posts] [Output directory]"
+  die "Not enough arguments"
+fi
+
 POST_COUNT=$1
 SITE_DIR=$2
 
