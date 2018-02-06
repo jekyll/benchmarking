@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 function die()
 {
     echo $@
@@ -126,7 +126,7 @@ title: Jekyll Test Site
 
 EOF
 
-for post_number in `seq 1 $POST_COUNT`
+for (( post_number = 1; post_number <= POST_COUNT; ++post_number )); do
 do
     export POST_NUMBER=$post_number
     post_date=`date +%Y-%m-%d`
