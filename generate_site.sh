@@ -23,7 +23,8 @@ cp ./default_layout.html $LAYOUT_DIR/default.html
 cp ./post_layout.html $LAYOUT_DIR/post.html
 
 cat >${SITE_DIR}/_config.yml << EOF
-markdown: redcarpet
+url: https://example.com
+baseurl: baseURL
 EOF
 
 cat >${SITE_DIR}/index.html << EOF
