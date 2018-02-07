@@ -1,0 +1,2 @@
+gem "jekyll", git: "https://github.com/jekyll/jekyll"
+gem "minima"
