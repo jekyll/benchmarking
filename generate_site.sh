@@ -14,8 +14,6 @@ fi
 POST_COUNT=$1
 SITE_DIR=$2
 
-POST_CONTENT=$(< template/post.md)
-
 POST_DIR=${SITE_DIR}/_posts
 mkdir -p $POST_DIR
 
@@ -28,13 +26,12 @@ do
     export POST_NUMBER=$post_number
     post_date=`date +%Y-%m-%d`
     post_file="$post_date-test_post_$post_number"
-    cat >$POST_DIR/$post_file.md << EOF
+    cat - template/post.md > $POST_DIR/$post_file.md << EOF
 ---
 layout: post
 title: Testing Post $POST_NUMBER
 ---
 
-$POST_CONTENT
 EOF
 
 done
